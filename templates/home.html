@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>SCREENSHARE | semicolon labs</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = 'style.css')}}">>
+	</head>
+	<body>
+		<div class='container'>
+		<h1>SCREENSHARE</h1>
+		<hr/>
+		<p>
+			This is an open source free app developed at semicolon labs by Shubham Sharma - shubhamsharma1172@gmail.com for 
+			sharing your desktop screen over WLAN.
+		</p>
+		<br>
+		<p>
+		Click the link to start live streaming!
+		<a href = "{{url_for('live')}}">LIVE</a>
+		</p>
+		</div>
+	</body>
+</html>
