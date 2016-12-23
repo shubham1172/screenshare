@@ -4,7 +4,7 @@ It is a python webapp to clone your display on other devices through WLAN
 Usage:
 Run setup.bat before using it for the first time
 
-# Use startup.bat to run the webapp
+_Use startup.bat to run the webapp
 
 Note:
 You must have Python 3.0-3.5 installed on your machine along with PIP
