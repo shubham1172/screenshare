@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, send_file
 from PIL import ImageGrab
 from io import BytesIO
+import sys
 
 app = Flask(__name__)
 
@@ -22,5 +23,9 @@ def image():
     img_io.seek(0)
     return send_file(img_io, mimetype='image/jpeg') 
 
-if(__name__=="__main__"):
-    app.run(host='192.168.137.1',debug=True,port=8082) 
+if(len(sys.argv)!=2):
+    print("INVALID USAGE. \n python main.py your_ip_address")
+else:
+    host = sys.argv[1]
+    if(__name__=="__main__"):
+        app.run(host=host,debug=True,port=8082) 
