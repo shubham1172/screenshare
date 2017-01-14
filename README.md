@@ -10,3 +10,5 @@ Note:
 You must have Python 3.0-3.5 installed on your machine along with PIP
 
 python and PIP must be added to the PATH environment variable
+
+## For now, we only support WINDOWS. 
